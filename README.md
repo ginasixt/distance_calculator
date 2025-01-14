@@ -57,7 +57,7 @@ Dieses Projekt berechnet die Entfernung von Patientenadressen zur Praxisadresse 
 
 2. **GUI verwenden**:
    - Geben Sie die Koordinaten der Praxis ein.
-   - Laden Sie die Rohdaten hoch (Excel-Datei vom Partientensystem ausgespruckt).
+   - Laden Sie die Rohdaten hoch (Excel-Datei vom Patientensystem ausgespruckt).
    - Klicken Sie auf "Calculate Distances", um die Entfernungen zu berechnen und das Balkendiagramm anzuzeigen.
 
 ## Dateien
@@ -85,8 +85,10 @@ Diese Datei enthält die GUI-Logik, die es dem Benutzer ermöglicht, die Rohdate
 1. **Excel-Datei**:
    - Die Excel-Datei sollte wie folgt strukturiert sein, :
      - Erste Zeile: Leer, Patienten-ID, Nachname, Vorname
-     - Zweite Zeile: Leer, Postleitzahl, Stadt (mehrere Spalten möglich, wenn Stadt Spalten enden, dann Komma), Straße(mehrere Spalten möglich), Hausnummer, Buchstabe
-Leere Zeilen und automatisch Erstellte Blöcke und Überschriften vom System werden ignoriert
+     - Zweite Zeile: Leer, Postleitzahl, Stadt (mehrere Spalten möglich, wenn Stadt Spalten enden, dann Komma), Straße(mehrere Spalten möglich), Hausnummer, Buchstabe.
+
+
+Leere Zeilen und automatisch erstellten Blöcke und Überschriften vom Patientensystem werden ignoriert
 
 2. **GUI**:
    - Geben Sie die Koordinaten ihrer Praxis ein
