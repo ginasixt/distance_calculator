@@ -26,10 +26,10 @@ Dieses Projekt berechnet die Entfernung von Patientenadressen zur Praxisadresse 
 ## Installation
 
 1. **Repository klonen**:
-   ```sh
-   git clone <repository-url>
-   cd <repository-directory>
-   ```
+    ```sh
+    git clone https://github.com/ginasixt/distance_calculator.git
+    cd distance_calculator
+    ```
 
 2. **Virtuelle Umgebung erstellen und aktivieren**:
    ```sh
@@ -37,15 +37,16 @@ Dieses Projekt berechnet die Entfernung von Patientenadressen zur Praxisadresse 
    source venv/bin/activate  # Auf Windows: venv\Scripts\activate
    ```
 
-3. **Abhängigkeiten installieren**:
+3. **Pakete installieren**:
    ```sh
-   pip install -r requirements.txt
+   pip install tkinter pandas geopy matplotlib
    ```
 
 4. **Zertifikate installieren (nur für macOS)**:
    ```sh
-   /Applications/Python\ 3.x/Install\ Certificates.command
+   /Applications/Python3\ 3.x/Install\ Certificates.command
    ```
+
 
 ## Verwendung
 
@@ -55,8 +56,8 @@ Dieses Projekt berechnet die Entfernung von Patientenadressen zur Praxisadresse 
    ```
 
 2. **GUI verwenden**:
-   - Geben Sie die Adresse der Praxis ein.
-   - Laden Sie die Rohdaten hoch (Excel-Datei).
+   - Geben Sie die Koordinaten der Praxis ein.
+   - Laden Sie die Rohdaten hoch (Excel-Datei vom Partientensystem ausgespruckt).
    - Klicken Sie auf "Calculate Distances", um die Entfernungen zu berechnen und das Balkendiagramm anzuzeigen.
 
 ## Dateien
@@ -82,12 +83,13 @@ Diese Datei enthält die GUI-Logik, die es dem Benutzer ermöglicht, die Rohdate
 ## Beispiel
 
 1. **Excel-Datei**:
-   - Die Excel-Datei sollte wie folgt strukturiert sein:
-     - Erste Zeile: Patienten-ID, Nachname, Vorname
-     - Zweite Zeile: Postleitzahl, Stadt, Straße, Hausnummer
+   - Die Excel-Datei sollte wie folgt strukturiert sein, :
+     - Erste Zeile: Leer, Patienten-ID, Nachname, Vorname
+     - Zweite Zeile: Leer, Postleitzahl, Stadt (mehrere Spalten möglich, wenn Stadt Spalten enden, dann Komma), Straße(mehrere Spalten möglich), Hausnummer, Buchstabe
+Leere Zeilen und automatisch Erstellte Blöcke und Überschriften vom System werden ignoriert
 
 2. **GUI**:
-   - Geben Sie die Adresse der Praxis ein, z.B. "Musterstraße 1, 12345 Musterstadt".
+   - Geben Sie die Koordinaten ihrer Praxis ein
    - Laden Sie die Excel-Datei hoch.
    - Klicken Sie auf "Calculate Distances", um die Entfernungen zu berechnen und das Balkendiagramm anzuzeigen.
 
@@ -97,4 +99,4 @@ Dieses Projekt ist unter der MIT-Lizenz lizenziert. Siehe die `venv/lib/python3.
 
 ## Autoren
 
-- [Dein Name](https://github.com/dein-github-username)
+- [Gina Netal](https://github.com/ginasixt)
